@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-serif-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  .font-handwriting {
+    font-family: 'Caveat', cursive;
+  }
+  .font-sans-clean {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+/* Modern Aesthetic Sage Green & Crisp White Paper Textures */
+.paper-ruled {
+  background-color: #FFFFFF;
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 29px,
+    #E6EFE5 30px
+  );
+}
+
+.paper-grid {
+  background-color: #FAFCFA;
+  background-size: 22px 22px;
+  background-image: 
+    linear-gradient(to right, rgba(122, 141, 120, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(122, 141, 120, 0.08) 1px, transparent 1px);
+}
+
+.paper-parchment {
+  background-color: #F8FAF7;
+  background-image: radial-gradient(#E2EBE1 15%, transparent 16%), radial-gradient(#E2EBE1 15%, transparent 16%);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+}
+
+.paper-blank {
+  background-color: #FFFFFF;
+}
+
+/* Torn paper edge effect */
+.torn-top {
+  clip-path: polygon(
+    0% 4%, 3% 0%, 7% 4%, 11% 1%, 15% 4%, 19% 0%, 23% 3%, 27% 1%, 31% 4%, 35% 0%,
+    39% 3%, 43% 1%, 47% 4%, 51% 0%, 55% 3%, 59% 1%, 63% 4%, 67% 0%, 71% 3%, 75% 1%,
+    79% 4%, 83% 0%, 87% 3%, 91% 1%, 95% 4%, 99% 0%, 100% 4%, 100% 100%, 0% 100%
+  );
+}
+
